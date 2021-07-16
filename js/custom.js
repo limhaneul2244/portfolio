@@ -46,46 +46,72 @@
                 });
             });
         });
-        if ($('.facts-list').length) {
-            $('.facts-list').owlCarousel({
-                loop: true,
-                nav: false,
-                dots: true,
-                items: 3,
-                margin: 30,
-                autoplay: false,
-                smartSpeed: 700,
-                autoplayTimeout: 6000,
+        // if ($('.facts-list').length) {
+        //     $('.facts-list').owlCarousel({
+        //         loop: true,
+        //         nav: false,
+        //         dots: true,
+        //         items: 3,
+        //         margin: 30,
+        //         autoplay: false,
+        //         smartSpeed: 700,
+        //         autoplayTimeout: 6000,
+        //         responsive: {
+        //             0: {
+        //                 items: 1,
+        //                 margin: 0
+        //             },
+        //             460: {
+        //                 items: 1,
+        //                 margin: 0
+        //             },
+        //             576: {
+        //                 items: 2,
+        //                 margin: 20
+        //             },
+        //             992: {
+        //                 items: 3,
+        //                 margin: 30
+        //             }
+        //         }
+        //     });
+        // }
+        if ($('.gallery-list').length) { //my work 
+            $('.gallery-list').owlCarousel({
+                loop: true, //무한루프로 적용시 true
+                nav: false, //네비게이션 버튼
+                // dots: true,
+                autoplay: true, //자동재생 설정
+                autoplayTimeout: 2500,
+                smartSpeed: 2500, //자동으로 넘어가는 시간 기본값 5000
+                autoplayHoverPause: true,
                 responsive: {
                     0: {
                         items: 1,
-                        margin: 0
-                    },
-                    460: {
-                        items: 1,
-                        margin: 0
+                        margin: 0,
+                        autoplayHoverPause: false
                     },
                     576: {
                         items: 2,
-                        margin: 20
+                        margin: 20,
+                        autoplayHoverPause: false
                     },
                     992: {
                         items: 3,
-                        margin: 30
+                        margin: 30,
+                        autoplayHoverPause: true
                     }
-                }
+                }  
             });
         }
-        if ($('.services-list').length) {
+        if ($('.services-list').length) {  //my study
             $('.services-list').owlCarousel({
                 loop: true,
                 nav: false,
                 dots: true,
-                items: 3,
-                margin: 30,
-                autoplay: false,
-                smartSpeed: 700,
-                autoplayTimeout: 6000,
+                autoplay: true,
+                autoplayTimeout: 2500,
+                smartSpeed: 2500,
                 responsive: {
                     0: {
                         items: 1,
@@ -101,57 +127,35 @@
                     },
                     992: {
                         items: 3,
-                        margin: 30
-                    }
-                }
-            });
-        }
-        if ($('.gallery-list').length) {
-            $('.gallery-list').owlCarousel({
-                loop: false,
-                nav: false,
-                dots: true,
-                items: 3,
-                autoplay: true,
-                smartSpeed: 700,
-                autoplayTimeout: 4000,
-                responsive: {
-                    0: {
-                        items: 1,
-                        margin: 0
-                    },
-                    576: {
-                        items: 2,
                         margin: 20
-                    },
-                    992: {
-                        items: 3,
-                        margin: 30
                     }
                 }
             });
         }
-        if ($('.testimonials-slider').length) {
-            $('.testimonials-slider').owlCarousel({
-                loop: true,
-                nav: false,
-                dots: true,
-                items: 1,
-                margin: 30,
-                autoplay: true,
-                smartSpeed: 700,
-                autoplayTimeout: 6000,
-                responsive: {
-                    0: {
-                        items: 1,
-                        margin: 0
-                    },
-                    768: {
-                        items: 1
-                    }
-                }
-            });
-        }
+
+
+        //사용하고 있지 않는 슬라이드 부분
+        // if ($('.testimonials-slider').length) {
+        //     $('.testimonials-slider').owlCarousel({
+        //         loop: true,
+        //         nav: false,
+        //         dots: true,
+        //         items: 1,
+        //         margin: 30,
+        //         autoplay: true,
+        //         smartSpeed: 700,
+        //         autoplayTimeout: 6000,
+        //         responsive: {
+        //             0: {
+        //                 items: 1,
+        //                 margin: 0
+        //             },
+        //             768: {
+        //                 items: 1
+        //             }
+        //         }
+        //     });
+        // }
         if ($('.fullpage-default').length) {
             var myFullpage = new fullpage('.fullpage-default', {
                 licenseKey: ' C7F41B00-5E824594-9A5EFB99-B556A3D5',

@@ -9,6 +9,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
+        
         <link rel="shortcut icon" href="favicon.ico">
         <!-- ↑↑↑↑ 파비콘 -->
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -18,14 +19,28 @@
         <!-- ↑↑↑↑ 폰트어썸 CDN -->
         <link rel="stylesheet" type="text/css" href="css/fullpage.min.css">
         <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+        <!-- ↑↑↑↑ owl-slider css -->
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/main.css">
         <!-- ↑↑↑↑ main CSS -->
         <link rel="stylesheet" href="css/responsive.css">
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
         <!-- ↑↑↑↑ swiper slider css -->
+
+        <script src="js/jquery.js"></script>
+        <!-- jquery가 caruosel보다 위에 있어야 함 -->
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- ↑↑↑↑ owl carousel slider -->
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <!-- ↑↑↑↑ swiper slider js -->
+        <script src="js/slider.js"></script>
+        <!-- ↑↑↑↑ swiper+owl carousel slider -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/fullpage.min.js"></script>
+        <script src="js/scrolloverflow.js"></script>
+        <script src="js/jquery.inview.min.js"></script>
+        <script src="js/form.js"></script>
+        <script src="js/custom.js"></script>
     </head>
     
     <body>
@@ -219,11 +234,11 @@
                                 </div>
                                 <div class="gallery-section">
                                     <div class="gallery-list owl-carousel">
-                                        <div class="item animate" data-animate="fadeInUp">
+                                        <div class="item" data-animate="fadeInUp">
                                             <div class="portfolio-item">
-                                                <a href="https://lhn2244.cafe24.com/storyboard/storyboard.htm" target="_blank">
+                                                <a href="/storyboard/storyboard_lhn.html" target="_blank">
                                                     <div class="thumb">
-                                                        <img src="images/por_mockup.png" alt="포트폴리오">
+                                                        <img src="images/por_mockup.png" alt="스토리보드">
                                                     </div>
                                                     <div class="thumb-inner animate" data-animate="fadeInUp">
                                                         <h4>Storyboard</h4>
@@ -234,7 +249,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="item animate" data-animate="fadeInUp">
+                                        <div class="item" data-animate="fadeInUp">
                                             <div class="portfolio-item">
                                                 <a href="https://lhn2244.cafe24.com" target="_blank">
                                                     <div class="thumb">
@@ -251,7 +266,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="item animate" data-animate="fadeInUp">
+                                        <div class="item" data-animate="fadeInUp">
                                             <div class="portfolio-item">
                                                 <a href="https://lhn2244.cafe24.com/m" target="_blank">
                                                     <div class="thumb">
@@ -267,7 +282,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="item animate" data-animate="fadeInUp">
+                                        <div class="item" data-animate="fadeInUp">
                                             <div class="portfolio-item">
                                                 <a href="https://lhn2244.cafe24.com/media" target="_blank">
                                                     <div class="thumb">
@@ -284,7 +299,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="item animate" data-animate="fadeInUp">
+                                        <div class="item" data-animate="fadeInUp">
                                             <div class="portfolio-item">
                                                 <a href="https://lhn2244.cafe24.com/mydog" target="_blank">
                                                     <div class="thumb"><img src="images/mydog.png" alt="mydog 반응형"></div>
@@ -316,28 +331,28 @@
                                 </div>
                                 <div class="services-section">
                                     <div class="services-list owl-carousel">
-                                        <div class="item animate" data-animate="fadeInUp">
+                                        <div class="item" data-animate="fadeInUp">
                                             <div class="service-box">
                                                 <span class="service-icon"><i class="fab fa-js-square" aria-hidden="true"></i></span>
                                                 <h3>Java Script</h3>
                                                 <p>Java Script를 별도로 공부하며<br>부족한 지식을 채우기 위해 노력하고 있습니다.</p>
                                             </div>
                                         </div>
-                                        <div class="item animate" data-animate="fadeInUp">
+                                        <div class="item" data-animate="fadeInUp">
                                             <div class="service-box">
                                                 <span class="service-icon"><i class="fa fa-desktop" aria-hidden="true"></i></span>
                                                 <h3>boostcourse 동영상 강의</h3>
                                                 <p>boostcourse를 재수강하며<br>기초지식을 탄탄하게 잡기 위해 노력하고 있습니다.</p>
                                             </div>
                                         </div>
-                                        <div class="item animate" data-animate="fadeInUp">
+                                        <div class="item" data-animate="fadeInUp">
                                             <div class="service-box">
                                                 <span class="service-icon"><i class="far fa-edit" aria-hidden="true"></i></span>
                                                 <h3>T story 기록 남기기</h3>
                                                 <p>개인 블로그를 통해<br>공부했던 내용을 복습하며 기록하고 있습니다.</p>
                                             </div>
                                         </div>
-                                        <div class="item animate" data-animate="fadeInUp">
+                                        <div class="item" data-animate="fadeInUp">
                                             <div class="service-box">
                                                 <span class="service-icon"><i class="fab fa-github" aria-hidden="true"></i></span>
                                                 <h3>GitHub 잔디심기</h3>
@@ -409,24 +424,19 @@
             </div>
         </div>  
 
-        <script src="js/jquery.js"></script>
+        
 
-        <script src="js/bootstrap.min.js"></script>
+        <!-- <script src="js/bootstrap.min.js"></script>
 
         <script src="js/fullpage.min.js"></script>
 
         <script src="js/scrolloverflow.js"></script>
 
-        <script src="js/owl.carousel.min.js"></script>
-
         <script src="js/jquery.inview.min.js"></script>
 
         <script src="js/form.js"></script>
 
-        <script src="js/custom.js"></script>
-
-        <script src="js/swiper.js"></script>
-        <!-- ↑↑↑↑ swiper slider -->
-
+        <script src="js/custom.js"></script> -->
+        
     </body>
 </html>
